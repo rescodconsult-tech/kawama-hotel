@@ -1,0 +1,199 @@
+/* =========================
+   GENERAL STYLING
+========================= */
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#f8f9fa;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight:700;
+}
+
+p{
+    color:#555;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar-brand{
+    color:#ffc107 !important;
+    letter-spacing:2px;
+}
+
+.nav-link{
+    transition:0.3s;
+}
+
+.nav-link:hover{
+    color:#ffc107 !important;
+}
+
+/* =========================
+   CAROUSEL
+========================= */
+
+.hero-image{
+    height:650px;
+    object-fit:cover;
+}
+
+.carousel-caption{
+    background:rgba(0,0,0,0.5);
+    padding:20px;
+    border-radius:10px;
+}
+
+.carousel-caption h1{
+    font-weight:bold;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card{
+    border:none;
+    transition:all 0.4s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   ROOM IMAGES
+========================= */
+
+.room-image{
+    height:250px;
+    object-fit:cover;
+}
+
+/* =========================
+   GALLERY IMAGES
+========================= */
+
+.gallery-img{
+    height:250px;
+    width:100%;
+    object-fit:cover;
+}
+
+.gallery-card{
+    overflow:hidden;
+}
+
+.gallery-card img{
+    transition:0.5s;
+}
+
+.gallery-card:hover img{
+    transform:scale(1.1);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-primary{
+    background:#0d6efd;
+    border:none;
+}
+
+.btn-warning{
+    font-weight:bold;
+}
+
+.btn-success{
+    font-weight:bold;
+}
+
+/* =========================
+   STATISTICS SECTION
+========================= */
+
+.bg-primary h1{
+    font-size:3rem;
+    font-weight:bold;
+}
+
+/* =========================
+   FORM STYLING
+========================= */
+
+.form-control,
+.form-select{
+    border-radius:10px;
+    padding:12px;
+}
+
+.form-control:focus,
+.form-select:focus{
+    box-shadow:0 0 10px rgba(13,110,253,0.3);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#111 !important;
+}
+
+footer h4{
+    color:#ffc107;
+}
+
+footer p{
+    color:#ddd;
+}
+
+footer a{
+    text-decoration:none;
+    color:#fff;
+}
+
+footer a:hover{
+    color:#ffc107;
+}
+
+/* =========================
+   SECTION SPACING
+========================= */
+
+section{
+    overflow:hidden;
+}
+
+/* =========================
+   ICONS
+========================= */
+
+.bi{
+    transition:0.3s;
+}
+
+.card:hover .bi{
+    transform:scale(1.2);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media(max-width:768px){
+
+.hero-image{
+    height:400px;
+}
+
+.carousel-caption h1{
+    font-size:25px;
+}
+
+}

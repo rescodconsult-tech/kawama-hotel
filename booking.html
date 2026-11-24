@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <title>Book Your Stay | Alkana Hotel</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<!-- ===================================
+NAVBAR
+=================================== -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold fs-3"
+           href="index.html">
+
+            ALKANA HOTEL
+
+        </a>
+
+        <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse"
+             id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="rooms.html">Rooms</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="gallery.html">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active"
+                       href="booking.html">
+
+                        Booking
+
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- ===================================
+PAGE HEADER
+=================================== -->
+
+<section class="bg-primary text-white text-center py-5">
+
+    <div class="container">
+
+        <h1 class="display-4 fw-bold">
+
+            Reserve Your Stay
+
+        </h1>
+
+        <p class="lead">
+
+            Complete the booking form below and we
+            will prepare your luxury experience.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ===================================
+BOOKING SECTION
+=================================== -->
+
+<section class="container my-5">
+
+    <div class="row">
+
+        <!-- LEFT SIDE -->
+
+        <div class="col-lg-5 mb-4">
+
+            <div class="card shadow h-100">
+
+                <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg"
+                     class="card-img-top">
+
+                <div class="card-body">
+
+                    <h3 class="text-primary">
+
+                        Why Stay With Us?
+
+                    </h3>
+
+                    <hr>
+
+                    <p>
+                        <i class="bi bi-check-circle-fill text-success"></i>
+                        Luxury Rooms
+                    </p>
+
+                    <p>
+                        <i class="bi bi-check-circle-fill text-success"></i>
+                        Free High-Speed WiFi
+                    </p>
+
+                    <p>
+                        <i class="bi bi-check-circle-fill text-success"></i>
+                        Swimming Pool
+                    </p>
+
+                    <p>
+                        <i class="bi bi-check-circle-fill text-success"></i>
+                        Conference Facilities
+                    </p>
+
+                    <p>
+                        <i class="bi bi-check-circle-fill text-success"></i>
+                        24-Hour Customer Support
+                    </p>
+
+                    <p>
+                        <i class="bi bi-check-circle-fill text-success"></i>
+                        Secure Parking
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE FORM -->
+
+        <div class="col-lg-7">
+
+            <div class="card shadow">
+
+                <div class="card-body p-4">
+
+                    <h2 class="mb-4 text-center">
+
+                        Booking Form
+
+                    </h2>
+
+                    <form action="save_booking.php"
+                          method="POST">
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+
+                                <label class="form-label">
+
+                                    Full Name
+
+                                </label>
+
+                                <input type="text"
+                                       name="fullname"
+                                       class="form-control"
+                                       required>
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                <label class="form-label">
+
+                                    Email Address
+
+                                </label>
+
+                                <input type="email"
+                                       name="email"
+                                       class="form-control"
+                                       required>
+
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+
+                                <label class="form-label">
+
+                                    Phone Number
+
+                                </label>
+
+                                <input type="text"
+                                       name="phone"
+                                       class="form-control">
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                <label class="form-label">
+
+                                    ID / Passport Number
+
+                                </label>
+
+                                <input type="text"
+                                       name="idnumber"
+                                       class="form-control">
+
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+
+                                <label class="form-label">
+
+                                    Check-In Date
+
+                                </label>
+
+                                <input type="date"
+                                       name="checkin"
+                                       class="form-control"
+                                       required>
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                <label class="form-label">
+
+                                    Check-Out Date
+
+                                </label>
+
+                                <input type="date"
+                                       name="checkout"
+                                       class="form-control"
+                                       required>
+
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+
+                                <label class="form-label">
+
+                                    Room Type
+
+                                </label>
+
+                                <select name="roomtype"
+                                        class="form-select">
+
+                                    <option>
+                                        Deluxe Room
+                                    </option>
+
+                                    <option>
+                                        Executive Room
+                                    </option>
+
+                                    <option>
+                                        Presidential Suite
+                                    </option>
+
+                                    <option>
+                                        Family Suite
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                <label class="form-label">
+
+                                    Number of Guests
+
+                                </label>
+
+                                <input type="number"
+                                       name="guests"
+                                       class="form-control">
+
+                            </div>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Special Requests
+
+                            </label>
+
+                            <textarea class="form-control"
+                                      rows="4"
+                                      name="comments">
+                            </textarea>
+
+                        </div>
+
+                        <button type="submit"
+                                class="btn btn-success w-100 btn-lg">
+
+                            <i class="bi bi-calendar-check"></i>
+
+                            Confirm Booking
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================
+HOTEL INFORMATION
+=================================== -->
+
+<section class="bg-light py-5">
+
+    <div class="container">
+
+        <div class="row text-center">
+
+            <div class="col-md-4">
+
+                <div class="card shadow">
+
+                    <div class="card-body">
+
+                        <i class="bi bi-telephone-fill
+                                  display-4 text-primary">
+                        </i>
+
+                        <h5 class="mt-3">
+
+                            Call Us
+
+                        </h5>
+
+                        <p>
+
+                            +254 700 000000
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card shadow">
+
+                    <div class="card-body">
+
+                        <i class="bi bi-envelope-fill
+                                  display-4 text-danger">
+                        </i>
+
+                        <h5 class="mt-3">
+
+                            Email
+
+                        </h5>
+
+                        <p>
+
+                            info@alkanahotel.com
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card shadow">
+
+                    <div class="card-body">
+
+                        <i class="bi bi-geo-alt-fill
+                                  display-4 text-success">
+                        </i>
+
+                        <h5 class="mt-3">
+
+                            Location
+
+                        </h5>
+
+                        <p>
+
+                            Nairobi, Kenya
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================
+FOOTER
+=================================== -->
+
+<footer class="bg-dark text-white py-5">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <h4>Alkana Hotel</h4>
+
+                <p>
+
+                    Luxury accommodation and
+                    exceptional hospitality.
+
+                </p>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <h4>Quick Links</h4>
+
+                <p>Home</p>
+                <p>Rooms</p>
+                <p>Gallery</p>
+                <p>About</p>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <h4>Contact</h4>
+
+                <p>info@alkanahotel.com</p>
+                <p>+254 700 000000</p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="text-center">
+
+            © 2026 Alkana Hotel.
+            All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
